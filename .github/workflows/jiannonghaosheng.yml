@@ -1,0 +1,25 @@
+name: jiannonghaosheng
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '6 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jiannonghaosheng
+        env:
+          nni2782: ${{ secrets.nni2782 }}
+        run: |
+          echo $nni2782 | jq -r .e50 | /bin/bash
+          echo $wbpp6 | jq -r .h3054 | /bin/bash
+          echo $m13 | jq -r .di1729 | /bin/bash
+          echo $zrkuz1257 | jq -r .f6347 | /bin/bash
+          echo $celfu5 | jq -r .dxw36144 | /bin/bash
+          echo $mut6 | jq -r .rcg97488 | /bin/bash
+          echo $wpn6940 | jq -r .g80 | /bin/bash
+          echo $ry03 | jq -r .ijmck24 | /bin/bash
+          echo $utm889 | jq -r .gq873 | /bin/bash
+          echo $lhx31371 | jq -r .j4874 | /bin/bash
+
